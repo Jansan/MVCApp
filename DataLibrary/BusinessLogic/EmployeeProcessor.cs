@@ -25,7 +25,7 @@ namespace DataLibrary.BusinessLogic
         }
         public static List<EmployeeModel> LoadEmployees()
         {
-            string sql = @"select Id, EmployeeId, FirstName, LastName, EmailAddress from dbo.Employees;";
+            string sql = @"select Id, EmployeeId, FirstName, LastName, EmailAddress from dbo.Employee;";
 
             return SqlDataAccess.LoadData<EmployeeModel>(sql);
         }
